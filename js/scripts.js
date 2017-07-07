@@ -13,6 +13,7 @@ $(document).ready(function(){
 
     $("#formRow").hide();
     $("#answerRow").show();
+    $("#feedback").show("slow");
 
     if(location !== "Elsewheres"){
       var outputLocation = location + ", that's cool! Check out these tracks being offered in your area."
