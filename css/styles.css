@@ -5,6 +5,7 @@ body{
 .well{
   background-color: #EDEFFE;
 }
+
 #trackheader img{
   display: block;
   margin: 0px auto;
@@ -25,4 +26,8 @@ body{
 
 #reactpng{
   margin-left: -25px;
+}
+
+#feedback p{
+  font-weight: bold;
 }

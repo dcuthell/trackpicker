@@ -6,7 +6,7 @@
 
 ## Description
 
-_The Epicodus Track Picker is a website that asks the user a series of questions and provides information on the different program tracks offered by Epicodus. By asking a particular set of questions, the website narrows down the courses being offered based off of location and the user's responses. _
+_The Epicodus Track Picker is a website that asks the user a series of questions and provides information on the different program tracks offered by Epicodus. By asking a particular set of questions, the website narrows down the courses being offered based off of location and the user's responses._
 
 ## Setup/Installation Requirements
 

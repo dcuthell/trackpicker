@@ -7,6 +7,7 @@ $(document).ready(function(){
     var backend = $("input:radio[name=inputBackend]:checked").val();
     var popular = $("input:radio[name=inputPopular]:checked").val();
     var apps = $("input:radio[name=inputApps]:checked").val();
+    var outputLocation = "";
 
     $("#myName").text(name);
 
@@ -16,12 +17,23 @@ $(document).ready(function(){
     $("#feedback").show("slow");
 
     if(location !== "Elsewheres"){
-      var outputLocation = location + ", that's cool! Check out these tracks being offered in your area."
+      outputLocation = location + ", that's cool! We've narrowed down your results to show Epicodus tracks in your city."
       $("#myLocation").text(outputLocation);
+      $("#myCity").text(location);
+      if(location === "Portland"){
+        $("#mySite").attr("href", "https://www.epicodus.com/portland/");
+      }
+      if(location === "Seattle"){
+        $("#mySite").attr("href", "https://www.epicodus.com/seattle/");
+      }
+
     } else {
-      var outputLocation = location + ". Have you considered moving to Portland or Seattle? Here are some tracks being offered in those cities."
+      outputLocation = location + ". Have you considered moving to Portland or Seattle? Here are some tracks being offered in those cities."
       $("#myLocation").text(outputLocation);
+      $("#mySite").attr("href", "https://www.epicodus.com/");
     }
+
+
 
     if(size === "true"){
       $("#cssDesign").show();
