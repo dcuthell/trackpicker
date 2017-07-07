@@ -9,10 +9,79 @@
   </head>
   <body>
     <div class="container">
+      <div class="jumbotron-fluid">
+        <h1 class="display-3">Welcome to the Track Picker!</h1>
+        <p class="lead">Answer some questions to determine the best track for you!</p>
+      </div>
       <div class="row" id="formRow">
         <div class="well">
           <form id="trackForm">
-            <p>Test1</p>
+            <div class="form-group">
+              <label for="inputName">Your name</label>
+              <input id="inputName" class="form-control" type="text" placeholder="Name">
+            </div>
+            <h3>Where are you currently located?</h3>
+            <select class="form-control" id="inputLocation">
+              <option>Portland</option>
+              <option>Seattle</option>
+              <option>Elsewheres</option>
+            </select>
+            <h3>Do you want to work for a bigger company?</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="inputSize" value="true">Yes
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="inputSize" value="false">No / Don't Care
+              </label>
+            </div>
+            <h3>Do you want to work with web content?</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="inputWeb" value="true">Yes
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="inputWeb" value="false">No / Don't Care
+              </label>
+            </div>
+            <h3>Do you want to focus on backend work?</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="inputBackend" value="true">Yes
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="inputBackend" value="false">No / Don't Care
+              </label>
+            </div>
+            <h3>Do you want to learn a popular, widely used language?</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="inputPopular" value="true">Yes
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="inputPopular" value="false">No / Don't Care
+              </label>
+            </div>
+            <h3>Do you want to work on building apps?</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="inputApps" value="true">Yes
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="inputApps" value="false">No / Don't Care
+              </label>
+            </div>
+
           </form>
         </div>
       </div>
