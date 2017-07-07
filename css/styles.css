@@ -1,12 +1,13 @@
 body{
   background: linear-gradient(#EDEFFE, #EDFEEE, #EDEFFE);
+  min-width: 400px;
 }
 
 .well{
   background-color: #EDEFFE;
 }
 
-#trackheader img{
+.trackheader img{
   display: block;
   margin: 0px auto;
 }
