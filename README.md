@@ -14,7 +14,7 @@ _The Epicodus Track Picker is a website that asks the user a series of questions
 * _Hit enter to go to the page_
 * _Fill out the form_
 * _Hit submit_
-* _read through the personalized feedback to see what track is best for you_
+* _Read through the personalized feedback to see what track is best for you_
 * _Join epicodus_
 
 ## Known Bugs
