@@ -15,7 +15,7 @@ body{
   display: none;
 }
 
-#rubyRails, #cssDesign, #javaAndroid, #csharpDotnet, #cssReact, #feedback{
+#rubyRails, #cssDesign, #javaAndroid, #csharpDotnet, #cssReact, #feedback, #emptyMessage{
   display: none;
 }
 

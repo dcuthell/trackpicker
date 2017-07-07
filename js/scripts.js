@@ -9,12 +9,15 @@ $(document).ready(function(){
     var apps = $("input:radio[name=inputApps]:checked").val();
     var outputLocation = "";
 
-    $("#myName").text(name);
+    if(name === ""){
+      name = prompt("Please enter your name, friend");
+    }
 
+    $(".myName").text(name);
 
     $("#formRow").hide();
-    $("#answerRow").show();
-    $("#feedback").show("slow");
+    $("#answerRow").fadeIn(3000);
+    $("#feedback").fadeIn(3000);
 
     if(location !== "Elsewheres"){
       outputLocation = location + ", that's cool! We've narrowed down your results to show Epicodus tracks in your city."
@@ -26,14 +29,11 @@ $(document).ready(function(){
       if(location === "Seattle"){
         $("#mySite").attr("href", "https://www.epicodus.com/seattle/");
       }
-
     } else {
       outputLocation = location + ". Have you considered moving to Portland or Seattle? Here are some tracks being offered in those cities."
       $("#myLocation").text(outputLocation);
       $("#mySite").attr("href", "https://www.epicodus.com/");
     }
-
-
 
     if(size === "true"){
       $("#cssDesign").show();
@@ -76,6 +76,16 @@ $(document).ready(function(){
       $("#cssReact").hide();
     }
 
+    var vis = false;
+    vis = vis || $("#cssDesign").is(':visible');
+    vis = vis || $("#cssReact").is(':visible');
+    vis = vis || $("#csharpDotnet").is(':visible');
+    vis = vis || $("#javaAndroid").is(':visible');
+    vis = vis || $("#rubyRails").is(':visible');
+
+    if(!vis){
+      $("#emptyMessage").show();
+    }
     event.preventDefault();
   });
 });

@@ -88,7 +88,7 @@
       <div class="row" id="answerRow">
         <div class="well">
           <div class="well" id="feedback">
-            <p>OK, <span id="myName"></span>, now for the next step. Let's see what tracks are best for you</p>
+            <p>OK, <em><span class="myName"></span></em>, now for the next step. Let's see what tracks are best for you</p>
             <p>We see you're from <span id="myLocation"></span> Remember, they have been matched just for you!</p>
             <p>You can check out Epicodus' <span id="myCity"></span> website for more information <a href="#" id="mySite">HERE</a>.
           </div>
@@ -198,6 +198,10 @@
               <p>CSS is the language for describing the presentation of Web pages, including colors, layout, fonts, and other stylistic choices. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, and printers. HTML — used for building the structure of the page — and CSS — used for the visual layout — are the two basic languages involved in the building of web pages and web applications.</p>
               <p>React Description Pending...</p>
             </div>
+          </div>
+          <div class="well" id="emptyMessage">
+            <p>Sorry, <em><span class="myName"></span></em>, but we're having trouble finding a match for you. Try reloading, selecting a different location, or changing some of your previous answers to "yes".</p>
+            <input type="button" value="Back to Form" onClick="window.location.reload()">
           </div>
         </div>
       </div>
