@@ -9,10 +9,61 @@ $(document).ready(function(){
     var apps = $("input:radio[name=inputApps]:checked").val();
 
     $("#myName").text(name);
-    $("#myLocation").text(location);
+
 
     $("#formRow").hide();
     $("#answerRow").show();
+
+    if(location !== "Elsewheres"){
+      var outputLocation = location + ", that's cool! Check out these tracks being offered in your area."
+      $("#myLocation").text(outputLocation);
+    } else {
+      var outputLocation = location + ". Have you considered moving to Portland or Seattle? Here are some tracks being offered in those cities."
+      $("#myLocation").text(outputLocation);
+    }
+
+    if(size === "true"){
+      $("#cssDesign").show();
+      $("#cssReact").show();
+      $("#csharpDotnet").show();
+      $("#javaAndroid").show();
+    }
+
+    if(web === "true"){
+      $("#cssDesign").show();
+      $("#cssReact").show();
+      $("#rubyRails").show();
+    }
+
+    if(backend === "true"){
+      $("#cssDesign").show();
+      $("#cssReact").show();
+      $("#csharpDotnet").show();
+      $("#rubyRails").show();
+    }
+
+    if(popular === "true"){
+      $("#cssDesign").show();
+      $("#cssReact").show();
+      $("#csharpDotnet").show();
+      $("#javaAndroid").show();
+    }
+
+    if(apps === "true"){
+      $("#javaAndroid").show();
+      $("#rubyRails").show();
+    }
+
+    if(location === "Portland"){
+      $("#javaAndroid").hide();
+      alert("hi");
+    }
+
+    if(location === "Seattle"){
+      $("#csharpDotnet").hide();
+      $("#cssReact").hide();
+    }
+
     event.preventDefault();
   });
 });
