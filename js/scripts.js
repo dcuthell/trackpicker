@@ -56,7 +56,6 @@ $(document).ready(function(){
 
     if(location === "Portland"){
       $("#javaAndroid").hide();
-      alert("hi");
     }
 
     if(location === "Seattle"){

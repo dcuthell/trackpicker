@@ -1,9 +1,6 @@
 #trackheader img{
-  margin-left: 40px;
-}
-
-#reactpng{
-  width: 60%;
+  display: block;
+  margin: 0px auto;
 }
 
 #answerRow{
@@ -12,4 +9,13 @@
 
 #rubyRails, #cssDesign, #javaAndroid, #csharpDotnet, #cssReact{
   display: none;
+}
+
+#reactpng img{
+  height: 105px;
+  width: 120px;
+}
+
+#reactpng{
+  margin-left: -25px;
 }
