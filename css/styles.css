@@ -1,3 +1,15 @@
-img{
+#trackheader img{
   margin-left: 40px;
+}
+
+#reactpng{
+  width: 60%;
+}
+
+#answerRow{
+  display: none;
+}
+
+#javaandroid{
+  display: none;
 }
