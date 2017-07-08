@@ -1,3 +1,10 @@
+function nameNotEmpty(item){
+  while(item === ""){
+    item = prompt("Please enter your name, friend");
+  }
+  return;
+}
+
 $(document).ready(function(){
   $("#trackForm").submit(function(event){
     var name = $("input#inputName").val();
@@ -9,7 +16,8 @@ $(document).ready(function(){
     var apps = $("input:radio[name=inputApps]:checked").val();
     var outputLocation = "";
 
-    if(name === ""){
+    // nameNotEmpty(name);
+    while(name === ""){
       name = prompt("Please enter your name, friend");
     }
 
